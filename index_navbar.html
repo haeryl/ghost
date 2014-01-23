@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/ghost.min.css" type="text/css" />
+<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" type="text/css" />
+<!--link href="css/jquery.mobile.min.css" rel="stylesheet" type="text/css" -->
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.0.min.css"  type="text/css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+
+</head>
+<body>
+<!--Step 1 aka Page 1 -->
+<div data-role="page" id="page1">
+	<!--header -->
+	<!--content  -->
+  <div role="main" class="ui-content">
+	  <center>
+		  <h2>SELAMAT DATANG  </h2>
+		  <img src="gambar/jpa.jpg" alt=""/>
+		  <h3>Jabatan Perkhidmatan Awam Malaysia</h3>
+	  </center>
+		<a href ="#page2" class="ui-btn ui-btn-inline">Transformasi JPA</a>
+  		<a href ="#page3" class="ui-btn ui-btn-inline">Kronologi</a>
+		<a href ="#page4" class="ui-btn ui-btn-inline">Direktori</a>
+  </div>
+	<!--footer -->
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#page2" data-icon="grid" class="ui-btn-active">Trans</a></li>
+			<li><a href="#page3" data-icon="star" >krono</a></li>
+			<li><a href="#page4" data-icon="gear">Direct</a></li>
+		</ul>
+	</div>
+</div>
+<!--Step 1 aka Page 2 -->
+<div data-role="page" id="page2">
+	<!--header -->
+	<div data-role="header" data-position="fixed"  data-add-back-btn="true" data-back-btn-text="kembali">
+		<h4>TRANSFORMASI</h4>
+		<a href ="#page1" class="ui-btn" data-transition="slideup" >Kembali</a>
+		<h3>VISI</h3>
+		<p style="font-size:11px">Menjadi sebuah organisasi bertaraf dunia dalam pengurusan sumber manusia Perkhidmatan Awam</p>
+	</div>
+	<!--content (before this role="content" 1.4 keatas) -->
+	<div role="main" class="ui-content">
+		<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-b">Uji dialog box</a>
+		<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+			<div data-role="header" data-theme="a">
+				<h1>Transformasi</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<h3 class="ui-title">Paparan maklumat transformasi</h3>
+			<p>Anda ingin meneruskan?</p>
+				<a href="#page1" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b">Batal</a>
+				<a href="#page3" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-transition="flow">Seterusnya</a>
+			</div>
+				<center>
+					<h3>TRANSFORMASI</h3>
+				</center>
+				<img src="gambar/transform.jpg" alt=""/>
+		</div>
+	</div>
+	<!--footer -->
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#page1" data-icon="grid">Trans</a></li>
+			<li><a href="#page3" data-icon="star" class="ui-btn-active">krono</a></li>
+			<li><a href="#page4" data-icon="gear">Direc</a></li>
+		</ul>
+	</div>
+</div>
+<!--Step 1 aka Page 3 -->
+<div data-role="page" id="page3">
+	<!--header -->
+	<div data-role="header" data-position="fixed"  data-add-back-btn="true" data-back-btn-text="kembali">
+		<h3>Utama</h3>
+		<a href ="#page1" class="ui-btn" data-direction="reverse">Kembali</a>
+	</div>
+	<!--content (before this role="content" 1.4 keatas -->
+	<div role="main" class="ui-content">
+		<center><h3>Kronologi KPPA</h3></center>
+		<div data-role="collapsible-set" data-collapsed="false">  
+			<div data-role="collapsible" data-collapsed="false" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+				<h4>MANTAN KPPA 1</h4>
+				<p>Sir John Huggins 1934 - 1943</p>
+				<p>A.J. Gracie 1.7.1954 - 7.9.1957</p>
+			</div>
+			<div data-role="collapsible" data-mini="true"">
+				<h3>MANTAN KPPA 2</h3>
+				<p>Sir John Huggins 1934 - 1943</p>
+				<p>A.J. Gracie 1.7.1954 - 7.9.1957</p>
+			</div>
+			<div data-role="collapsible" data-collapsed-icon="gear" data-expanded-icon="delete">
+				<h6>MANTAN KPPA 3</h6> 
+				<p>Sir John Huggins 1934 - 1943</p>
+				<p>A.J. Gracie 1.7.1954 - 7.9.1957</p>
+			</div>
+		</div>
+	</div>
+	<!--footer -->
+	<div data-role="footer">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#page1" data-icon="grid">Trans</a></li>
+				<li><a href="#page2" data-icon="star" class="ui-btn-active">krono</a></li>
+				<li><a href="#page4" data-icon="gear">Direc</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div>
+</div>
+<!--Step 1 aka Page 4 -->
+<div data-role="page" id="page4">
+<!--header -->
+<!--content -->
+<div role="main" class="ui-content">
+	<div data-role="popup" id="id1">
+		<a href="Tel:+601111142490" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline"> </a>
+		<a href="sms://+601111142490" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline"> </a>
+		<a href="mailto:haeryl@gmail.com" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline"> </a>
+	</div>
+		<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Carian">
+			<li>
+				<img src="gambar/casper.jpg"/>
+				<p>
+					<a href="Tel:+601111142490" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline"> </a>
+					<a href="sms://+601111142490" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline"> </a>
+					<a href="mailto:haeryl@gmail.com" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline"> </a>
+				</p>
+			</li>
+			<li>
+				<a href="#popupMenu" data-rel="popup" data-transition="slideup" >
+					<img src="gambar/casper1.jpg"/>
+					<h2>Casper</h2>
+					<p>Elsa meets Anna</p></a>
+				</a>
+					<div data-role="popup" id="popupMenu" data-theme="b">
+						<ul data-role="listview" data-inset="true" style="min-width:210px;" >
+							<li data-role="list-divider"></li>
+							<li><a href="#">No Telefon</a></li>
+							<li><a href="#">SMS</a></li>
+							<li><a href="#">Email</a></li>
+							<li><a href="#">Whatapps</a></li>
+						</ul>
+					</div>
+			</li>
+			<li>
+				<a href="#id1" data-rel="popup" data-transition="slideup" />
+					<img src="gambar/casper2.jpg" />
+					<h2>Casper</h2>
+					<p>Elsa meets Anna</p></a>
+
+				</a> 
+			</li>
+				<li>
+				<a href="#">
+				<img src="gambar/frozen2.jpg">
+				<h2>Frozen</h2>
+				<p>Elsa meets Anna</p></a>
+				</li>
+			<li>
+				<a href="#">
+				<img src="gambar/casper1.jpg">
+				<h2>Frozen</h2>
+				<p>Elsa and Olaf</p></a>
+			</li>
+			<li>
+				<a href="#">
+				<img src="gambar/frozen.jpg">
+				<h2>Frozen</h2>
+				<p>A sister more like me</p></a>
+			</li>
+			<li>
+				<a href="#">
+				<img src="gambar/frozen1.jpg">
+				<h2>Frozen</h2>
+				<p>Read-A-Long</p></a>
+			</li>
+			<li>
+				<a href="#">
+				<img src="gambar/frozen2.jpg">
+				<h2>Frozen</h2>
+				<p>Kristoff,Anna and Elsa</p></a>
+			</li>
+		</ul>
+	<!--footer-->
+	<a href="#page1" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b">Batal</a>
+	<div data-role="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#page1" data-icon="grid">Transform</a></li>
+                <li><a href="#page2" data-icon="star" class="ui-btn-active">kronologi</a></li>
+                <li><a href="#page3" data-icon="gear">Directory</a></li>
+            </ul>
+        </div><!-- /navbar -->
+	</div>
+</div>
+</div>
+</body>
+</html>
+           
